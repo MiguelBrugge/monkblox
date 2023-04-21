@@ -1,0 +1,36 @@
+:root{
+    --lightDark: #434a52;
+    --lightGray: rgb(183, 183, 183);
+}
+
+/* Navigation */
+#navigation, #contentDiv, #contentDiv ul, li a{
+    height: 40px !important;
+}
+
+#navigation li a:hover {
+    border-bottom: solid 3px var(--lightGray) !important;
+    color: var(--lightGray) !important;
+}
+
+#searchForm{
+    height: 30px;
+    width: 300px !important;
+}
+
+#navButtons button{
+    background: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+#navButtons #robuxAmount{
+    width: auto;
+    height: 40px;
+}
+
+#navButtons button:hover{
+    background-color: var(--lightDark);
+    cursor: pointer;
+}
