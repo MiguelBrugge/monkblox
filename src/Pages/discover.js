@@ -1,12 +1,11 @@
-
 import SideNav from "../components/sideNav";
-const Home = () => {
+const Discover = () => {
     return (
         <>
             <SideNav />
-            Home
+            Discover
         </>
     );
 }
 
-export default Home;
+export default Discover;

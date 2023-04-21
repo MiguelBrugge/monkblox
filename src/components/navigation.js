@@ -11,7 +11,7 @@ import {
     faMessage
 } from '@fortawesome/free-solid-svg-icons';
 
-const Navigation = () => {
+const Navigation = ({ setPage }) => {
     return (
         <nav id="navigation" class="navbar navbar-expand-sm navbar-dark bg-dark py-0">
             <div class="container-fluid">
@@ -22,10 +22,10 @@ const Navigation = () => {
                 <div id="contentDiv mynavbar" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-3 me-4">
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center text-white px-4" href="javascript:void(0)">Home</a>
+                            <a class="nav-link d-flex align-items-center text-white px-4" onClick={() => setPage("Home")}>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center text-white px-4" href="javascript:void(0)">Discover</a>
+                            <a class="nav-link d-flex align-items-center text-white px-4" onClick={() => setPage("Discover")}>Discover</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center text-white px-4" href="javascript:void(0)">Avatar Shop</a>
